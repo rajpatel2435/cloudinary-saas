@@ -78,7 +78,7 @@ const originalSize= formData.get("originalSize") as string;
                 uploadStream.end(buffer);
             }
         )
-
+// store in prisma client in order to add 
         const video= await prisma.video.create({
             data:{
                 title,
